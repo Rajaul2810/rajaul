@@ -10,7 +10,6 @@ import {
   FiCpu,
   FiInfo,
   FiMail,
-  FiMap,
   FiMapPin,
   FiPhone,
   FiUser,
@@ -25,7 +24,7 @@ const AboutCom = () => {
           <Image src={rajaul} className=" w-80 h-96  -rotate-6" alt="hero" />
         </div>
         <div>
-          <h1 className=" py-2 text-3xl font-semibold text-amber-400">
+          <h1 className=" py-3 text-3xl font-semibold text-amber-400">
             About Me
           </h1>
           <ul className="menu menu-horizontal border-b bg-white shadow-md rounded-lg ">
@@ -39,7 +38,7 @@ const AboutCom = () => {
             >
               <a>
                 <FiInfo />
-                Personal Info
+                Information
               </a>
             </li>
 
@@ -119,8 +118,8 @@ const info = () => {
 const edu = () => {
   return (
    
-      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical my-5">
-        <li className=" p-3 bg-white shadow-sm rounded-sm">
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical my-5 ">
+        <li className=" p-3 bg-white shadow-sm rounded-sm w-full">
           <div className="timeline-middle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -138,9 +137,9 @@ const edu = () => {
           <div className="timeline-start border-l-2 ps-2">
             <p className=" font-bold text-lg">Jagannath University,Dhaka</p>
             <p className=" text-gray-700">BSc in CSE</p>
-            <p className=" flex gap-3 items-center py-3 text-sm">
+            <p className=" flex gap-3 items-center py-2 text-sm">
               <FiCalendar />
-              01-2019 to 12-2023
+              2019 - 2023
             </p>
             <p className=" flex gap-3 items-center text-sm font-bold">
               <FiAward />
@@ -166,7 +165,7 @@ const edu = () => {
           <div className="timeline-start border-l-2 ps-2">
             <p className=" font-bold text-lg">Agricultural University Collage</p>
             <p className=" text-gray-700">Science Group</p>
-            <p className=" flex gap-3 items-center py-3 text-sm">
+            <p className=" flex gap-3 items-center py-2 text-sm">
               <FiCalendar />
               2016 - 2018
             </p>

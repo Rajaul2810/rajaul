@@ -35,7 +35,7 @@ const Project = () => {
               <a
                 className={` submenu ${
                   change == "web"
-                    ? "bg-gradient-to-r from-amber-400 to-amber-300"
+                    ? "bg-gradient-to-r from-amber-400 to-amber-300 "
                     : ""
                 }`}
               >
