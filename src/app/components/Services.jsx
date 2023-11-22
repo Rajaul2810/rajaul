@@ -7,7 +7,7 @@ import { AiOutlineSafetyCertificate } from "react-icons/ai";
 const Services = () => {
   return (
     <section className="bg-slate-100">
-      <h1 className=" text-center text-3xl font-bold pt-10">My Services</h1>
+      <h1 className=" text-center text-3xl font-bold pt-10 drop-shadow-md">My Services</h1>
       <p className=" text-center text-gray-400">WHAT I CAN DO FOR YOU</p>
       <div className=" flex justify-center min-h-screen py-10">
         <div className=" w-11/12 md:w-10/12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 h-fit">

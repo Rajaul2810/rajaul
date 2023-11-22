@@ -8,6 +8,11 @@ import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { SiExpress, SiGit, SiMongodb, SiMysql, SiNextdotjs, SiPython, SiReact, SiRedux } from "react-icons/si";
 
+import art from '../../../public/assets/projects/art_chain.png';
+import biin from '../../../public/assets/projects/biin.png';
+import ayal from '../../../public/assets/projects/ayal.png';
+
+
 
 const serviceData = [
   {
@@ -169,85 +174,115 @@ const awards = [
 
 const skills = [
   {
-    id:1,
-    name:'HTML',
-    icon:<FaHtml5/>
+    id: 1,
+    name: 'HTML',
+    icon: <FaHtml5 />
   },
   {
-    id:2,
-    name:'CSS',
-    icon:<FaCss3/>
+    id: 2,
+    name: 'CSS',
+    icon: <FaCss3 />
   },
   {
-    id:3,
-    name:'Bootstrap',
-    icon:<FaBootstrap/>
+    id: 3,
+    name: 'Bootstrap',
+    icon: <FaBootstrap />
   },
   {
-    id:4,
-    name:'Javascript',
-    icon:<RiJavascriptFill />
+    id: 4,
+    name: 'Javascript',
+    icon: <RiJavascriptFill />
   },
   {
-    id:5,
-    name:'TailwindCSS',
-    icon:<BiLogoTailwindCss />
+    id: 5,
+    name: 'TailwindCSS',
+    icon: <BiLogoTailwindCss />
   },
   {
-    id:6,
-    name:'React Js',
-    icon:<FaReact/>
+    id: 6,
+    name: 'React Js',
+    icon: <FaReact />
   },
   {
-    id:7,
-    name:'Next Js',
-    icon:<SiNextdotjs />
+    id: 7,
+    name: 'Next Js',
+    icon: <SiNextdotjs />
   },
   {
-    id:7,
-    name:'Node Js',
-    icon:<FaNodeJs />
+    id: 7,
+    name: 'Node Js',
+    icon: <FaNodeJs />
   },
   {
-    id:8,
-    name:'Express Js',
-    icon:<SiExpress />
+    id: 8,
+    name: 'Express Js',
+    icon: <SiExpress />
   },
   {
-    id:9,
-    name:'MongoDB',
-    icon:<SiMongodb />
+    id: 9,
+    name: 'MongoDB',
+    icon: <SiMongodb />
   },
   {
-    id:10,
-    name:'MySQL',
-    icon:<SiMysql />
+    id: 10,
+    name: 'MySQL',
+    icon: <SiMysql />
   },
   {
-    id:11,
-    name:'React Native',
-    icon:<SiReact />
+    id: 11,
+    name: 'React Native',
+    icon: <SiReact />
   },
   {
-    id:12,
-    name:'Git',
-    icon:<SiGit />
+    id: 12,
+    name: 'Git',
+    icon: <SiGit />
   },
   {
-    id:13,
-    name:'Python',
-    icon:<SiPython />
+    id: 13,
+    name: 'Python',
+    icon: <SiPython />
   },
   {
-    id:14,
-    name:'Redux',
-    icon:<SiRedux />
+    id: 14,
+    name: 'Redux',
+    icon: <SiRedux />
   },
   {
-    id:15,
-    name:'Machine Learning',
-    icon:<FaConnectdevelop />
+    id: 15,
+    name: 'Machine Learning',
+    icon: <FaConnectdevelop />
   },
 ]
 
-export { serviceData, participations, awards,skills };
+const webs = [
+  {
+    id: 1,
+    photo: art,
+    title:'ArtChain',
+    tecnology: ['React', 'TailwindCSS', 'Solidity', 'daiyui', 'Etherjs'],
+    live: 'https://artchain0x00.netlify.app/',
+    code: 'https://github.com/Rajaul2810/art-chain-0x00',
+    description: 'ArtChain is a revolutionary platform that empowers creators to establish decentralized communities centered around specific art genres, such as portrait, photography, and painting. Operating as a Decentralized Autonomous Organization (DAO), ArtChain ensures a community-driven approach, free from centralized control.',
+  },
+  {
+    id: 2,
+    photo:biin,
+    title:'BIIN',
+    tecnology: ['NextJs', 'TailwindCSS', 'daiyUI'],
+    live: 'https://www.biin.network/',
+    code: 'https://github.com/Rajaul2810/biin',
+    description: 'Bangladesh ICT & Innovation Network (BIIN) is an exemplary organization that stands as a beacon of hope for the youth of Bangladesh. By providing skill development, fostering innovation, and promoting entrepreneurship. BIIN is empowering the young generation to lead the way toward a digitally inclusive and prosperous future',
+  },
+  {
+    id: 3,
+    photo:ayal,
+    title:'AyAl Corp Limited',
+    tecnology: ['NextJs', 'TailwindCSS'],
+    live: 'https://ayal.vercel.app/',
+    code: 'https://github.com/Rajaul2810/ayal',
+    description: 'AyAl Corp was founded in 2010 with the goal of providing IT-enabled services to the local clients. After a few initial projects, it invested in a startup offering innovative services to mobile phone users incorporating artificial intelligence technology and also salesforce monitoring system.',
+  }
+]
+
+export { serviceData, participations, awards, skills,webs };

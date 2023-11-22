@@ -24,7 +24,7 @@ const AboutCom = () => {
           <Image src={rajaul} className=" w-80 h-96  -rotate-6" alt="hero" />
         </div>
         <div>
-          <h1 className=" py-3 text-3xl font-semibold text-amber-400">
+          <h1 className=" py-3 text-3xl font-semibold text-amber-400 drop-shadow-md">
             About Me
           </h1>
           <ul className="menu menu-horizontal border-b bg-white shadow-md rounded-lg ">

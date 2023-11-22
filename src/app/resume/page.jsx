@@ -8,7 +8,7 @@ const Resume = () => {
   return (
     <section className=" bg-slate-100">
       <div className="">
-        <h1 className=" text-center text-3xl font-bold pt-10">My Resume</h1>
+        <h1 className=" text-center text-3xl font-bold pt-10 drop-shadow-md">My Resume</h1>
         <p className=" text-center text-gray-400">In Details</p>
         <div className=" min-h-screen flex justify-center py-10 ">
           <div className=" w-11/12 md:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -16,7 +16,7 @@ const Resume = () => {
               <h1 className=" font-bold py-2 ">My Skills</h1>
               <div className=" grid grid-cols-2 gap-3 p-2">
                 {skills.map(({ name, icon, id }) => (
-                  <div key={id} className=" p-2 border rounded-md bg-slate-50">
+                  <div key={id} className=" p-2 border rounded-md bg-slate-50" draggable>
                     <div className="flex items-center  gap-5 ">
                       <p className="">{icon}</p>
                       <p className=" text-sm">{name}</p>
@@ -27,7 +27,7 @@ const Resume = () => {
               <p className=" py-4"> <hr /></p>
               <div className=" grid grid-cols-2 gap-3 p-2">
                 <div className=" p-2 border rounded-md bg-slate-50">
-                  <p className=" text-sm">200+ Problem Solving</p>
+                  <p className=" text-sm">Problem Solving</p>
                 </div>
                 <div className=" p-2 border rounded-md bg-slate-50">
                   <p className=" text-sm">Leadership Skill</p>
