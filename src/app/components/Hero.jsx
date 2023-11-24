@@ -14,7 +14,7 @@ const Hero = () => {
       <div className=" w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center">
         <div>
           <h1 className=" py-2">Welcome to My Portfolio</h1>
-          <h1 className="text-5xl font-bold drop-shadow-md">I&rsquo;m Rajaul Karim </h1>
+          <h1 className="text-4xl font-extrabold drop-shadow-md">I&rsquo;m Rajaul Karim </h1>
           <div className=" text-3xl py-6 font-extrabold text-amber-400">
             <Typewriter
               options={{

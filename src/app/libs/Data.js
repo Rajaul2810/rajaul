@@ -11,7 +11,17 @@ import { SiExpress, SiGit, SiMongodb, SiMysql, SiNextdotjs, SiPython, SiReact, S
 import art from '../../../public/assets/projects/art_chain.png';
 import biin from '../../../public/assets/projects/biin.png';
 import ayal from '../../../public/assets/projects/ayal.png';
+import guider from '../../../public/assets/projects/guider.jpg';
+import tr from '../../../public/assets/projects/tr.svg';
 
+import agri from '../../../public/assets/media/agri.jpg'
+import agri2 from '../../../public/assets/media/agri2.jpg'
+import go from '../../../public/assets/media/go.jpg'
+import go12 from '../../../public/assets/media/go12.jpg'
+import biinpic from '../../../public/assets/media/biin.jpg'
+import workshop from '../../../public/assets/media/workshop.jpg'
+import iboss from '../../../public/assets/media/iboss.jpg'
+import ict from '../../../public/assets/media/ict.jpg'
 
 
 const serviceData = [
@@ -285,4 +295,27 @@ const webs = [
   }
 ]
 
-export { serviceData, participations, awards, skills,webs };
+const apps = [
+  {
+    id: 1,
+    photo: guider,
+    title:'Guider App',
+    tecnology: ['React Native', 'CSS', 'Node Js', 'Express Js', 'MongoDB'],
+    live: 'https://www.youtube.com/watch?v=RKjHteC_3oM',
+    code: 'https://github.com/Rajaul2810/guider',
+    description: 'Guider App digital online Education, Motivation, Guidance and Communication system. User can booked any expert and talk to each other by video call. Expert people can create their profile. Expert people can arrenged any seminor.',
+  },
+  {
+    id: 2,
+    photo: tr,
+    title:'E-tornament App',
+    tecnology: ['React Native', 'CSS', 'Node Js', 'Express Js', 'MongoDB'],
+    live: 'https://youtu.be/luk0_2wiz7Y',
+    code: 'https://github.com/Rajaul2810/pubg-tornament',
+    description: 'E-tornament App is a online tornament booking app. Admin can arrenged diffrent game tornament. Gamer can booked any tornament.',
+  },
+]
+
+const media = [agri,go12,agri2,biinpic,iboss,workshop,go,ict]
+
+export { serviceData, participations, awards, skills,webs,apps,media };

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import {
   FiExternalLink,
+  FiFrown,
   FiGlobe,
   FiLayers,
   FiLink,
@@ -11,7 +12,7 @@ import {
   FiUpload,
 } from "react-icons/fi";
 
-import { webs } from "../libs/Data.js";
+import { webs,apps } from "../libs/Data.js";
 import Image from "next/image";
 
 const Project = () => {
@@ -96,13 +97,22 @@ const Project = () => {
                change=='all' && web_dev()
               }
               {
+               change=='all' && app_dev()
+              }
+              {
                change=='all' && power_point()
               }
               {
                change=='web'&& web_dev()
               }
               {
+               change=='app'&& app_dev()
+              }
+              {
                change=='power'&& power_point()
+              }
+              {
+               change=='data'&& data_analysis()
               }
             </div>
           </div>
@@ -126,7 +136,37 @@ const web_dev = () => {
           </div>
           <p className=" font-bold py-1 text-center">{item.title}</p>
           <p className=" text-xs text-justify">{item.description}</p>
-          <div className=" flex flex-wrap gap-1 py-1 justify-center">
+          <div className=" flex flex-wrap gap-1 py-2 justify-center">
+            {item?.tecnology.map((tg, i) => (
+              <p key={i} className=" border p-1 rounded-md text-sm bg-slate-50 ">
+                {tg}
+              </p>
+            ))}
+          </div>
+          <div className=" absolute h-full w-full top-0 invisible group-hover:visible bg-slate-600 bg-opacity-50 flex justify-center gap-5 items-center">
+             <a href={item.code} className=" bg-white p-2 rounded-full shadow-sm tooltip"data-tip="Code" target="_blank"><FiLink/></a>
+             <a href={item.live} className=" bg-white p-2 rounded-full shadow-sm tooltip" data-tip="Live" target="_blank"><FiExternalLink/></a>
+          </div>
+        </div>
+      ))}
+    </>
+  );
+};
+const app_dev = () => {
+  return (
+    <>
+      {apps.map((item, index) => (
+        <div key={index} className=" p-2 bg-white rounded-md shadow-sm group relative">
+          <div className=" flex justify-center bg-slate-200 pt-1">
+          <Image
+            src={item.photo}
+            alt={item.title}
+            className=" w-3/4 h-72"
+          />
+          </div>
+          <p className=" font-bold py-1 text-center">{item.title}</p>
+          <p className=" text-xs text-justify">{item.description}</p>
+          <div className=" flex flex-wrap gap-1 py-2 justify-center">
             {item?.tecnology.map((tg, i) => (
               <p key={i} className=" border p-1 rounded-md text-sm bg-slate-50 ">
                 {tg}
@@ -169,5 +209,16 @@ const power_point = () => {
     </>
   );
 };
+const data_analysis = () => {
+  return (
+    <>
+      <div className=" flex justify-center items-center gap-3 text-gray-500">
+        <FiFrown/> <p>No data available</p>
+      </div>
+    </>
+  );
+};
+
+
 
 export default Project;
