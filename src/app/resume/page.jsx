@@ -29,9 +29,9 @@ const Resume = () => {
                   </div>
                 ))}
               </div>
-              <p className=" py-4">
-                <hr />
-              </p>
+             
+                <hr className="py-4" />
+
               <div className=" grid grid-cols-2 gap-3 p-2">
                 <div className=" p-2 border rounded-md bg-slate-50">
                   <p className=" text-sm">Problem Solving</p>

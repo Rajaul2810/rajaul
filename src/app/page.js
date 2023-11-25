@@ -1,6 +1,7 @@
 import AboutCom from "./components/AboutCom";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import Resume from "./resume/page";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero/>
       <AboutCom/>
       <Services/>
+      <Resume/>
     </div>
   )
 }

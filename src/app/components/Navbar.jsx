@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className="bg-white p-4 hidden md:flex border-b sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <div className=" text-xl font-bold">Your Logo</div>
+        <div className=" btn text-xl bg-amber-300 hover:bg-amber-400 font-bold italic">RK</div>
         <div className="hidden md:flex space-x-6">
           <Link href="/">
             <p className={`navlink ${path=='/'? 'bg-amber-400':''}`}>Home</p>

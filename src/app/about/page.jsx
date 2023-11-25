@@ -17,14 +17,15 @@ import {
 } from "react-icons/fi";
 
 import { media } from "../libs/Data.js";
+import Link from "next/link";
 
 const About = () => {
   const [change, setChange] = useState("info");
   return (
     <div className="  min-h-screen bg-amber-50 py-5">
-      <div className="flex justify-center py-10">
-        <div className=" w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center">
-          <div className=" bg-amber-300 border-2 border-white shadow-md ">
+      <div className="flex justify-center items-center py-10">
+        <div className=" w-11/12 md:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className=" bg-amber-300 border-2 border-white shadow-md w-80 h-96">
             <Image src={rajaul} className=" w-80 h-96  -rotate-6" alt="hero" />
           </div>
           <div>
@@ -78,12 +79,12 @@ const About = () => {
             {change === "club" && club()}
 
             <div className=" flex gap-5">
-              <button className=" heroBtn">
+              <Link href="/contact" className=" heroBtn">
                 Hire Me Now <AiOutlineArrowRight />
-              </button>
-              <button className="heroBtn">
+              </Link>
+              <a href="https://drive.google.com/file/d/1b6d9R61U4J1LVTq0Op2iI4Muw1yed3HL/view?usp=sharing" target="_blank" className="heroBtn">
                 Download CV <AiOutlineDownload />
-              </button>
+              </a>
             </div>
           </div>
         </div>

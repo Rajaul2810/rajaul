@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import hero from "../../../public/assets/hero.png";
+import hero from "../../../public/assets/hira2.png";
 import { AiOutlineArrowRight, AiOutlineDownload } from "react-icons/ai";
 import { BsFacebook, BsGithub, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
 import { FiMail } from "react-icons/fi";
+import Link from "next/link";
 
 
 const Hero = () => {
@@ -34,35 +35,37 @@ const Hero = () => {
             to utilize my knowledge and personal skills in Software Development.
           </p>
           <div className=" flex gap-5">
-            <button className=" heroBtn">
+            <Link href="/contact" className=" heroBtn">
               Hire Me Now! <AiOutlineArrowRight />
-            </button>
-            <button className="heroBtn">
+            </Link>
+            <a href="https://drive.google.com/file/d/1b6d9R61U4J1LVTq0Op2iI4Muw1yed3HL/view?usp=sharing" target="_blank" className="heroBtn">
               Download CV <AiOutlineDownload />
-            </button>
+            </a>
           </div>
           <div className=" flex gap-5 py-6">
-            <p className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
+            <a href="mailto:rajaulkarim2810@gmail.com" target="_blank" className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
               <FiMail />
-            </p>
-            <p className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
+            </a>
+            <a href="https://www.facebook.com/Hira2810" target="_blank" className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
               <BsFacebook />
-            </p>
-            <p className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
+            </a>
+            <a href="https://www.linkedin.com/in/rajaul2810/" target="_blank" className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
               <BsLinkedin />
-            </p>
-            <p className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
+            </a>
+            <a href="https://github.com/Rajaul2810" target="_blank" className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
               <BsGithub />
-            </p>
-            <p className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
+            </a>
+            <a href="https://twitter.com/Rajaul2810" target="_blank" className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
               <BsTwitter />
-            </p>
-            <p className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
+            </a>
+            <a href="https://www.youtube.com/channel/UCvK7OuxNq_I3xyNenkj9x8Q" target="_blank" className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer">
               <BsYoutube />
-            </p>
+            </a>
           </div>
         </div>
-        <Image src={hero} className="w-full" alt="hero" />
+        <div>
+        <Image src={hero} priority={true} className=" w-80 bg-amber-300 rounded-t-full" alt="hero" />
+        </div>
       </div>
     </div>
   );

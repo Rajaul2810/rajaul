@@ -214,7 +214,7 @@ const skills = [
     icon: <FaReact />
   },
   {
-    id: 7,
+    id: 16,
     name: 'Next Js',
     icon: <SiNextdotjs />
   },
