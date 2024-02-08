@@ -21,7 +21,7 @@ const AboutCom = () => {
   const [change, setChange] = useState("info");
   return (
     <div className=" flex justify-center items-center min-h-screen bg-amber-50 py-5">
-      <div className=" w-11/12 md:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className=" w-11/12 md:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center">
         <div className=" bg-amber-300 border-2 border-white shadow-md order-last md:order-first h-96 w-80">
           <Image src={rajaul} className=" w-80 h-96  -rotate-6" alt="hero" />
         </div>
@@ -139,7 +139,7 @@ const edu = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box w-full">
+        <div className="timeline-end timeline-box rounded-md w-full">
           <p className=" font-bold ">Jagannath University,Dhaka</p>
           <p className=" text-gray-700">BSc in CSE</p>
           <p className=" flex gap-3 items-center py-2 text-sm">
@@ -169,7 +169,7 @@ const edu = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box mt-5 w-full">
+        <div className="timeline-end timeline-box rounded-md mt-5 w-full">
           <p className=" font-bold ">Agricultural University Collage</p>
           <p className=" text-gray-700">Science Group</p>
           <p className=" flex gap-3 items-center py-2 text-sm">
@@ -204,7 +204,7 @@ const club = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box w-full">
+        <div className="timeline-end timeline-box rounded-md w-full">
           <p className=" font-bold">
             IEEE Computer Society JnU Student Branch Chapter
           </p>
@@ -232,7 +232,7 @@ const club = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box mt-5 w-full">
+        <div className="timeline-end timeline-box rounded-md mt-5 w-full">
           <p className=" font-bold">
             Bangladesh Science Fiction Society JnU Unit
           </p>

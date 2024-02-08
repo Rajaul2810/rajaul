@@ -13,6 +13,8 @@ import biin from '../../../public/assets/projects/biin.png';
 import ayal from '../../../public/assets/projects/ayal.png';
 import guider from '../../../public/assets/projects/guider.jpg';
 import tr from '../../../public/assets/projects/tr.svg';
+import fbcci from '../../../public/assets/projects/fbcciirc.png';
+import agriTour from '../../../public/assets/projects/agri.png';
 
 import agri from '../../../public/assets/media/agri.jpg'
 import agri2 from '../../../public/assets/media/agri2.jpg'
@@ -266,6 +268,24 @@ const skills = [
 ]
 
 const webs = [
+  {
+    id: 4,
+    photo: agriTour,
+    title:'AgriVillage',
+    tecnology: ['NextJs', 'TailwindCSS', 'Daiyui',"NodeJs","ExpressJs","mongoDB"],
+    live: 'https://agri-village.vercel.app/',
+    code: 'https://github.com/Rajaul2810/AgriVillage',
+    description: 'Welcome to our Agri-Tourism & Agri Project Marketplace! Discover authentic farm experiences and innovative agricultural ventures. Purchase tickets for tours and products directly on our platform. Invest in projects and connect with the agrarian world. Start your agrarian adventure today!',
+  },
+  {
+    id: 0,
+    photo: fbcci,
+    title:'FBCCIIRC',
+    tecnology: ['NextJs', 'TailwindCSS', 'daiyui',],
+    live: 'https://fbcciirc.org/',
+    code: 'https://github.com/Rajaul2810/',
+    description: 'FBCCI Innovation and Research Centre (FBCCI IRC) stands as a dedicated institution, firmly committed to advancing the realms of innovation and research within the borders of Bangladesh aiming to collaborate closely with the government to shape innovation policies and support industry-led research initiatives, bridging gaps between various sectors for sustainable growth.',
+  },
   {
     id: 1,
     photo: art,
