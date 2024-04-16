@@ -7,9 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      textColor:{
+        skin:{
+          main:'var(--color-text-main)',
+        }
+      },
       backgroundImage: {
         'hero-pattern': "url('/public/Hexagon.svg')",
       },
+      backgroundColor:{
+        skin:{
+          fill:'var(--color-text-fill)'
+        }
+      }
     }
   },
   plugins: [require("daisyui")],

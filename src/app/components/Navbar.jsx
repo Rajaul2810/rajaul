@@ -7,24 +7,24 @@ const Navbar = () => {
   const path = usePathname();
   //console.log(path);
   return (
-    <nav className="bg-white p-4 hidden md:flex border-b sticky top-0 z-50">
+    <nav className="bg-white p-4 hidden md:flex border sticky top-0 z-50 mx-2 shadow-sm">
       <div className="container mx-auto flex justify-between items-center">
-        <div className=" btn text-xl bg-amber-300 hover:bg-amber-400 font-bold italic">RK</div>
+        <div className=" btn text-xl bg-skin-fill font-bold italic text-white">RK</div>
         <div className="hidden md:flex space-x-6">
           <Link href="/">
-            <p className={`navlink ${path=='/'? 'bg-amber-400':''}`}>Home</p>
+            <p className={`navlink ${path=='/'? 'text-skin-main':''}`}>Home</p>
           </Link>
           <Link href="/about">
-            <p className={`navlink ${path=='/about'? 'bg-amber-400':''}`}>About</p>
+            <p className={`navlink ${path=='/about'? 'text-skin-main':''}`}>About</p>
           </Link>
           <Link href="/project">
-            <p className={`navlink ${path=='/project'? 'bg-amber-400':''}`}>Project</p>
+            <p className={`navlink ${path=='/project'? 'text-skin-main':''}`}>Project</p>
           </Link>
           <Link href="/resume">
-            <p className={`navlink ${path=='/resume'? 'bg-amber-400':''}`}>Resume</p>
+            <p className={`navlink ${path=='/resume'? 'text-skin-main':''}`}>Resume</p>
           </Link>
           <Link href="/contact">
-            <p className={`navlink ${path=='/contact'? 'bg-amber-400':''}`}>Contact</p>
+            <p className={`navlink ${path=='/contact'? 'text-skin-main':''}`}>Contact</p>
           </Link>
         </div>
       </div>

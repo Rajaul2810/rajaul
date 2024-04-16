@@ -16,20 +16,22 @@ import {
   FiUser,
 } from "react-icons/fi";
 
-import { media } from "../libs/Data.js";
 import Link from "next/link";
+import { Media } from "../components/Media";
 
 const About = () => {
   const [change, setChange] = useState("info");
   return (
-    <div className="  min-h-screen bg-amber-50 py-5">
+    <div className="  min-h-screen py-5">
       <div className="flex justify-center items-center py-10">
         <div className=" w-11/12 md:w-3/4 grid grid-cols-1 md:grid-cols-2 gap-5">
-          <div className=" bg-amber-300 border-2 border-white shadow-md w-80 h-96">
-            <Image src={rajaul} className=" w-80 h-96  -rotate-6" alt="hero" />
+          <div className=" flex justify-center items-center">
+          <div className=" bg-skin-fill border-2 border-white shadow-md w-80 h-96">
+            <Image src={rajaul} className=" w-80 h-96  -rotate-6" alt="Rajaul" />
+          </div>
           </div>
           <div>
-            <h1 className=" py-3 text-3xl font-semibold text-amber-400 drop-shadow-md">
+            <h1 className=" py-3 text-3xl font-semibold text-skin-main drop-shadow-md">
               About Me
             </h1>
             <ul className="menu menu-horizontal border-b bg-white shadow-md rounded-lg ">
@@ -78,11 +80,11 @@ const About = () => {
             {change === "qua" && edu()}
             {change === "club" && club()}
 
-            <div className=" flex gap-5">
+            <div className=" flex gap-5 justify-center">
               <Link href="/contact" className=" heroBtn">
                 Hire Me Now <AiOutlineArrowRight />
               </Link>
-              <a href="https://drive.google.com/file/d/1b6d9R61U4J1LVTq0Op2iI4Muw1yed3HL/view?usp=sharing" target="_blank" className="heroBtn">
+              <a href="https://drive.google.com/file/d/1b6d9R61U4J1LVTq0Op2iI4Muw1yed3HL/view?usp=sharing" target="_blank" className="heroBtn2">
                 Download CV <AiOutlineDownload />
               </a>
             </div>
@@ -92,23 +94,8 @@ const About = () => {
       <hr className=" py-5" />
 
       {/* media */}
-      <section>
-        <div className=" flex justify-center">
-          <div className=" w-11/12 md:w-3/4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-            {media.map((item, i) => (
-              <div
-                key={i}
-                className=" shadow-md rounded-md border border-amber-300"
-              >
-                <Image
-                  src={item}
-                  alt=""
-                  className=" h-96 w-full rounded-md hover:shadow-xl"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+      <section  className="mb-3">
+        <Media/>
       </section>
     </div>
   );
@@ -118,28 +105,28 @@ const info = () => {
   return (
     <div className=" grid gap-5 grid-cols-2 py-5">
       <p className=" flex gap-3 items-center text-sm bg-white shadow-sm p-2 border">
-        <FiUser /> Rajaul Karim (Hira)
+        <FiUser color="teal"/> Rajaul Karim (Hira)
       </p>
       <p className=" flex gap-3 items-center text-sm bg-white shadow-sm p-2 border">
-        <FiPhone /> +8801776030787
+        <FiPhone color="teal"/> +8801776030787
       </p>
       <p className=" flex gap-3 items-center text-sm bg-white shadow-sm p-2 border">
-        <FiMail /> rajaulkarim2810 @gmail.com
+        <FiMail color="teal"/> rajaulkarim2810 @gmail.com
       </p>
       <p className=" flex gap-3 items-center text-sm bg-white shadow-sm p-2 border">
-        <FiCalendar />
+        <FiCalendar color="teal"/>
         Born on 28 Oct 2000
       </p>
       <p className=" flex gap-3 items-center text-sm bg-white shadow-sm p-2 border">
-        <RiGraduationCapLine />
+        <RiGraduationCapLine color="teal"/>
         BSc in CSE
       </p>
       <p className=" flex gap-3 items-center text-sm bg-white shadow-sm p-2 border">
-        <FiMapPin />
+        <FiMapPin color="teal"/>
         Wari, Dhaka, Bangladesh
       </p>
       <p className=" flex gap-3 items-center text-sm bg-white shadow-sm p-2 border">
-        <IoLanguageOutline />
+        <IoLanguageOutline color="teal"/>
         Bangle, English
       </p>
     </div>
@@ -164,15 +151,15 @@ const edu = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box w-full">
+        <div className="timeline-end timeline-box w-full rounded-sm">
           <p className=" font-bold text-lg">Jagannath University,Dhaka</p>
           <p className=" text-gray-700">BSc in CSE</p>
           <p className=" flex gap-3 items-center py-2 text-sm">
-            <FiCalendar />
+            <FiCalendar color="teal"/>
             2019 - 2023
           </p>
           <p className=" flex gap-3 items-center text-sm font-bold">
-            <FiAward />
+            <FiAward color="teal"/>
             CGPA: 3.30
           </p>
         </div>
@@ -194,15 +181,15 @@ const edu = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box mt-5 w-full">
+        <div className="timeline-end timeline-box mt-5 w-full rounded-sm">
           <p className=" font-bold text-lg">Agricultural University Collage</p>
           <p className=" text-gray-700">Science Group</p>
           <p className=" flex gap-3 items-center py-2 text-sm">
-            <FiCalendar />
+            <FiCalendar color="teal"/>
             2016 - 2018
           </p>
           <p className=" flex gap-3 items-center text-sm font-bold">
-            <FiAward />
+            <FiAward color="teal"/>
             GPA: 4.78
           </p>
         </div>
@@ -229,13 +216,13 @@ const club = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box">
+        <div className="timeline-end timeline-box rounded-sm">
           <p className=" font-bold">
             IEEE Computer Society JnU Student Branch Chapter
           </p>
           <p className=" text-gray-700">General Secretary</p>
           <p className=" flex gap-3 items-center py-3 text-sm">
-            <FiCalendar />
+            <FiCalendar color="teal"/>
             01-2023 to 12-2023
           </p>
         </div>
@@ -257,13 +244,13 @@ const club = () => {
             />
           </svg>
         </div>
-        <div className="timeline-end timeline-box mt-5">
+        <div className="timeline-end timeline-box mt-5 rounded-sm">
           <p className=" font-bold text-lg">
             Bangladesh Science Fiction Society JnU Unit
           </p>
           <p className=" text-gray-700">Office Secretary</p>
           <p className=" flex gap-3 items-center py-3 text-sm">
-            <FiCalendar />
+            <FiCalendar color="teal"/>
             01-2022 - 12-2022
           </p>
         </div>

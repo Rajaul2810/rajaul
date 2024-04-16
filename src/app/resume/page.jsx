@@ -5,7 +5,7 @@ import { FiAward, FiCalendar, FiCheckCircle } from "react-icons/fi";
 
 const Resume = () => {
   return (
-    <section className=" bg-amber-50 ">
+    <section className="">
       <div className="">
         <h1 className=" text-center text-3xl font-bold pt-10 drop-shadow-md">
           My Resume
@@ -13,9 +13,9 @@ const Resume = () => {
         <p className=" text-center text-gray-400">In Details</p>
         <div className="  flex justify-center py-10 ">
           <div className=" w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className=" shadow-md bg-white w-full p-5 rounded-md">
+            <div className=" shadow-md bg-white w-full p-5 rounded-md border">
               <h1 className=" font-bold py-2 text-lg">My Skills</h1>
-              <div className=" grid grid-cols-2 gap-3 p-2">
+              <div className=" grid grid-cols-2 gap-3 p-2 ">
                 {skills.map(({ name, icon, id }) => (
                   <div
                     key={id}
@@ -48,7 +48,7 @@ const Resume = () => {
               </div>
             </div>
 
-            <div className=" shadow-md bg-white w-full p-5 rounded-md">
+            <div className=" shadow-md bg-white w-full p-5 rounded-md border">
               <h1 className=" font-bold py-2 text-lg">
                 My Participations & Achievement
               </h1>
@@ -65,7 +65,7 @@ const Resume = () => {
               ))}
             </div>
             <div>
-              <div className=" shadow-md bg-white w-full p-5 rounded-md">
+              <div className=" shadow-md bg-white w-full p-5 rounded-md border">
                 <h1 className=" font-bold py-2 text-lg">Experience</h1>
                 <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                   <li>
@@ -83,11 +83,11 @@ const Resume = () => {
                         />
                       </svg>
                     </div>
-                    <div className="timeline-end timeline-box w-full">
+                    <div className="timeline-end timeline-box w-full rounded-sm">
                       <p className=" font-bold ">AyAI Corp Limited - Internship</p>
                       <p className=" text-gray-700">Web Developer</p>
                       <p className=" flex gap-3 items-center py-2 text-sm">
-                        <FiCalendar />
+                        <FiCalendar color="teal"/>
                         07-2023 - 11-2023
                       </p>
                     </div>
@@ -109,13 +109,13 @@ const Resume = () => {
                         />
                       </svg>
                     </div>
-                    <div className="timeline-end timeline-box w-full">
+                    <div className="timeline-end timeline-box w-full rounded-sm">
                       <p className=" font-bold">
                         CPSD Technologies Ltd - Internship
                       </p>
                       <p className=" text-gray-700">IOT Engineer</p>
                       <p className=" flex gap-3 items-center py-2 text-sm">
-                        <FiCalendar />
+                        <FiCalendar color="teal"/>
                         10-2023 - 01-2024
                       </p>
                     </div>
@@ -125,7 +125,7 @@ const Resume = () => {
               </div>
             </div>
             <div>
-              <div className=" shadow-md bg-white w-full p-5 rounded-md">
+              <div className=" shadow-md bg-white w-full p-5 rounded-md border">
                 <h1 className=" font-bold py-2 text-lg">Other Activities</h1>
                 <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
                   <li>
@@ -143,13 +143,13 @@ const Resume = () => {
                         />
                       </svg>
                     </div>
-                    <div className="timeline-end timeline-box w-full">
+                    <div className="timeline-end timeline-box w-full rounded-sm">
                       <p className=" font-bold">
                       UNICEF Bangladesh
                       </p>
                       <p className=" text-gray-700">Volunteer</p>
                       <p className=" flex gap-3 items-center py-2 text-sm">
-                        <FiCalendar />
+                        <FiCalendar color="teal"/>
                         2022 - Present
                       </p>
                     </div>
@@ -171,13 +171,13 @@ const Resume = () => {
                         />
                       </svg>
                     </div>
-                    <div className="timeline-end timeline-box w-full">
+                    <div className="timeline-end timeline-box w-full rounded-sm">
                       <p className=" font-bold">
                       Orphan Paradise Organization
                       </p>
                       <p className=" text-gray-700">Volunteer</p>
                       <p className=" flex gap-3 items-center py-2 text-sm">
-                        <FiCalendar />
+                        <FiCalendar color="teal"/>
                         2022 - Present
                       </p>
                     </div>

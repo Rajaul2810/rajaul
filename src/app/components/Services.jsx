@@ -20,7 +20,7 @@ const Services = () => {
           {serviceData.map((item, index) => (
             <div
               key={index}
-              className=" shadow-sm bg-white border w-full p-5 rounded-md hover:shadow-md hover:scale-105 duration-300"
+              className=" shadow-sm bg-white border w-full p-5 rounded-md hover:shadow-md hover:scale-105 hover:bg-skin-fill hover:text-white duration-300"
             >
               <div className=" flex justify-center">
                 <Image
@@ -68,7 +68,7 @@ const Services = () => {
         <Link href="/project" className=" heroBtn">
           All Project <AiOutlineArrowRight />
         </Link>
-        <Link href="/contact" className="heroBtn">
+        <Link href="/contact" className="heroBtn2">
           Contact Me <AiOutlineArrowRight />
         </Link>
       </div>

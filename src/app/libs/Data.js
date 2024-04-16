@@ -266,13 +266,51 @@ const skills = [
     icon: <FaConnectdevelop />
   },
 ]
+const feature = [
+  {
+    id: 3,
+    photo: agriTour,
+    title: 'AgriVillage',
+    tecnology: ['NextJs', 'TailwindCSS', 'Daiyui', "NodeJs", "ExpressJs", "mongoDB"],
+    live: 'https://agri-village.vercel.app/',
+    code: 'https://github.com/Rajaul2810/AgriVillage',
+    
+  },
+  {
+    id: 2,
+    photo: guider,
+    title: 'Guider App',
+    tecnology: ['React Native', 'CSS', 'Node Js', 'Express Js', 'MongoDB'],
+    live: 'https://www.youtube.com/watch?v=RKjHteC_3oM',
+    code: 'https://github.com/Rajaul2810/guider',
+    
+  },
+  {
+    id: 1,
+    photo: art,
+    title: 'ArtChain',
+    tecnology: ['React', 'TailwindCSS', 'Solidity', 'daiyui', 'Etherjs'],
+    live: 'https://artchain0x00.netlify.app/',
+    code: 'https://github.com/Rajaul2810/art-chain-0x00',
+    
+  },
+  {
+    id: 0,
+    photo: fbcci,
+    title: 'FBCCIIRC',
+    tecnology: ['NextJs', 'TailwindCSS', 'daiyui',],
+    live: 'https://fbcciirc.org/',
+    code: 'https://github.com/Rajaul2810/',
+    
+  },
+]
 
 const webs = [
   {
     id: 4,
     photo: agriTour,
-    title:'AgriVillage',
-    tecnology: ['NextJs', 'TailwindCSS', 'Daiyui',"NodeJs","ExpressJs","mongoDB"],
+    title: 'AgriVillage',
+    tecnology: ['NextJs', 'TailwindCSS', 'Daiyui', "NodeJs", "ExpressJs", "mongoDB"],
     live: 'https://agri-village.vercel.app/',
     code: 'https://github.com/Rajaul2810/AgriVillage',
     description: 'Welcome to our Agri-Tourism & Agri Project Marketplace! Discover authentic farm experiences and innovative agricultural ventures. Purchase tickets for tours and products directly on our platform. Invest in projects and connect with the agrarian world. Start your agrarian adventure today!',
@@ -280,7 +318,7 @@ const webs = [
   {
     id: 0,
     photo: fbcci,
-    title:'FBCCIIRC',
+    title: 'FBCCIIRC',
     tecnology: ['NextJs', 'TailwindCSS', 'daiyui',],
     live: 'https://fbcciirc.org/',
     code: 'https://github.com/Rajaul2810/',
@@ -289,7 +327,7 @@ const webs = [
   {
     id: 1,
     photo: art,
-    title:'ArtChain',
+    title: 'ArtChain',
     tecnology: ['React', 'TailwindCSS', 'Solidity', 'daiyui', 'Etherjs'],
     live: 'https://artchain0x00.netlify.app/',
     code: 'https://github.com/Rajaul2810/art-chain-0x00',
@@ -297,8 +335,8 @@ const webs = [
   },
   {
     id: 2,
-    photo:biin,
-    title:'BIIN',
+    photo: biin,
+    title: 'BIIN',
     tecnology: ['NextJs', 'TailwindCSS', 'daiyUI'],
     live: 'https://www.biin.network/',
     code: 'https://github.com/Rajaul2810/biin',
@@ -306,8 +344,8 @@ const webs = [
   },
   {
     id: 3,
-    photo:ayal,
-    title:'AyAl Corp Limited',
+    photo: ayal,
+    title: 'AyAl Corp Limited',
     tecnology: ['NextJs', 'TailwindCSS'],
     live: 'https://ayal.vercel.app/',
     code: 'https://github.com/Rajaul2810/ayal',
@@ -319,7 +357,7 @@ const apps = [
   {
     id: 1,
     photo: guider,
-    title:'Guider App',
+    title: 'Guider App',
     tecnology: ['React Native', 'CSS', 'Node Js', 'Express Js', 'MongoDB'],
     live: 'https://www.youtube.com/watch?v=RKjHteC_3oM',
     code: 'https://github.com/Rajaul2810/guider',
@@ -328,14 +366,48 @@ const apps = [
   {
     id: 2,
     photo: tr,
-    title:'E-tornament App',
+    title: 'E-tornament App',
     tecnology: ['React Native', 'CSS', 'Node Js', 'Express Js', 'MongoDB'],
     live: 'https://youtu.be/luk0_2wiz7Y',
     code: 'https://github.com/Rajaul2810/pubg-tornament',
     description: 'E-tornament App is a online tornament booking app. Admin can arrenged diffrent game tornament. Gamer can booked any tornament.',
   },
 ]
+const media = [
+  {
+    img: agri,
+    title: "AgiVillage",
+  },
+  {
+    img: go12,
+    title: "Go Bangladesh",
+  },
+  {
+    img:agri2,
+    title: "AgriVillage",
+  },
+  {
+    img:biinpic,
+    title: "BIIN",
+  },
+  {
+    img:iboss,
+    title: "iBOS",
+  },
+  {
+    img:workshop,
+    title: "App Workshop",
+  },
+  {
+    img:go,
+    title: "Go Bangladesh",
+  },
+  {
+    img:ict,
+    title: "Go Bangladesh",
+  },
+];
 
-const media = [agri,go12,agri2,biinpic,iboss,workshop,go,ict]
 
-export { serviceData, participations, awards, skills,webs,apps,media };
+
+export { serviceData, participations, awards, skills, webs, apps, media, feature };

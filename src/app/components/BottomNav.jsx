@@ -16,7 +16,7 @@ const BottomNav = () => {
     <nav className="md:hidden fixed bottom-0 left-0 w-full bg-white p-3 rounded-t-xl shadow-md border-t z-50">
       <div className="flex justify-around items-center">
         <Link href="/">
-          <div className={`bottomNav ${path=='/'? 'text-amber-400 ':''}`}>
+          <div className={`bottomNav ${path=='/'? 'text-skin-main ':''}`}>
             <p className=" self-center">
               <AiFillHome />
             </p>
@@ -24,7 +24,7 @@ const BottomNav = () => {
           </div>
         </Link>
         <Link href="/about">
-          <div className={`bottomNav ${path=='/about'? 'text-amber-400 ':''}`}>
+          <div className={`bottomNav ${path=='/about'? 'text-skin-main ':''}`}>
             <p className=" self-center">
               <RiUser2Fill />
             </p>
@@ -32,7 +32,7 @@ const BottomNav = () => {
           </div>
         </Link>
         <Link href="/project">
-          <div className={`bottomNav ${path=='/project'? 'text-amber-400 ':''}`}>
+          <div className={`bottomNav ${path=='/project'? 'text-skin-main ':''}`}>
             <p className=" self-center">
               <AiFillCrown />
             </p>
@@ -40,7 +40,7 @@ const BottomNav = () => {
           </div>
         </Link>
         <Link href="/resume">
-          <div className={`bottomNav ${path=='/resume'? 'text-amber-400 ':''}`}>
+          <div className={`bottomNav ${path=='/resume'? 'text-skin-main':''}`}>
             <p className=" self-center">
               <AiFillSetting />
             </p>
@@ -48,7 +48,7 @@ const BottomNav = () => {
           </div>
         </Link>
         <Link href="/contact">
-          <div className={`bottomNav ${path=='/contact'? 'text-amber-400':''}`}>
+          <div className={`bottomNav ${path=='/contact'? 'text-skin-main':''}`}>
             <p className="self-center">
               <AiFillMessage />
             </p>

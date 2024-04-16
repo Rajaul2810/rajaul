@@ -9,7 +9,6 @@ import {
   FiList,
   FiPackage,
   FiTrendingUp,
-  FiUpload,
 } from "react-icons/fi";
 
 import { webs,apps } from "../libs/Data.js";
@@ -33,7 +32,7 @@ const Project = () => {
                 <a
                   className={` submenu ${
                     change == "all"
-                      ? "bg-gradient-to-r from-amber-400 to-amber-300"
+                      ? "bg-skin-fill text-white"
                       : ""
                   }`}
                 >
@@ -45,7 +44,7 @@ const Project = () => {
                 <a
                   className={` submenu ${
                     change == "web"
-                      ? "bg-gradient-to-r from-amber-400 to-amber-300 "
+                      ? "bg-skin-fill text-white"
                       : ""
                   }`}
                 >
@@ -57,7 +56,7 @@ const Project = () => {
                 <a
                   className={` submenu ${
                     change == "app"
-                      ? "bg-gradient-to-r from-amber-400 to-amber-300"
+                      ? "bg-skin-fill text-white"
                       : ""
                   }`}
                 >
@@ -69,7 +68,7 @@ const Project = () => {
                 <a
                   className={` submenu ${
                     change == "power"
-                      ? "bg-gradient-to-r from-amber-400 to-amber-300"
+                      ? "bg-skin-fill text-white"
                       : ""
                   }`}
                 >
@@ -81,7 +80,7 @@ const Project = () => {
                 <a
                   className={` submenu me-3 ${
                     change == "data"
-                      ? "bg-gradient-to-r from-amber-400 to-amber-300"
+                      ? "bg-skin-fill text-white"
                       : ""
                   }`}
                 >

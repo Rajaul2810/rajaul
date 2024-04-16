@@ -2,17 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  :root{
+    --color-text-main:#2a9d8f;
+    --color-text-fill:#2a9d8f;
+  }
+}
+
 @layer components {
     .navlink {
-      @apply hover:bg-amber-300 ps-3 pe-3 pt-2 pb-2 rounded-md transition-colors duration-500;
+      @apply ps-3 pe-3 pt-2 pb-2 rounded-md transition-colors duration-500;
     }
     .heroBtn {
-      @apply btn normal-case bg-amber-300 shadow-md hover:bg-amber-400 flex items-center gap-2;
+      @apply btn normal-case shadow-md flex py-0 items-center gap-2 bg-white text-skin-main hover:bg-skin-fill hover:text-white border-teal-600;
+    }
+    .heroBtn2 {
+      @apply btn normal-case shadow-md flex items-center gap-2 bg-skin-fill text-white hover:bg-white hover:text-skin-main;
     }
     .bottomNav {
-      @apply flex flex-col hover:text-amber-400 transition-all duration-300 ;
+      @apply flex flex-col transition-all duration-300 ;
     }
     .submenu {
-      @apply bg-white cursor-pointer flex  ms-3 gap-2 justify-center items-center text-sm w-44 rounded-md shadow-md hover:bg-gradient-to-r from-amber-400 to-amber-300 transition-colors duration-500 p-1;
+      @apply cursor-pointer flex  ms-3 gap-2 justify-center items-center text-sm w-44 rounded-md shadow-md  transition-colors duration-500 p-1;
     }
   }

@@ -23,7 +23,7 @@ const Hero = () => {
           <h1 className="text-4xl font-extrabold drop-shadow-md">
             I&rsquo;m Rajaul Karim
           </h1>
-          <div className=" text-3xl py-6 font-extrabold text-amber-400">
+          <div className=" text-3xl py-6 font-extrabold text-skin-main">
             <Typewriter
               options={{
                 strings: [
@@ -31,6 +31,7 @@ const Hero = () => {
                   "React Developer",
                   "MERN Stack Developer",
                   "Problem Solver",
+                  "NodeJs Developer"
                 ],
                 autoStart: true,
                 loop: true,
@@ -42,58 +43,58 @@ const Hero = () => {
             want to utilize my knowledge and personal skills in Software
             Development. I participated in more than <span className=" font-bold text-lg">05</span> hackathons and more than <span className=" font-bold text-lg">10</span> different types of contest.
           </p>
-          <div className=" flex gap-5">
-            <Link href="/contact" className=" heroBtn">
+          <div className=" flex gap-5 justify-center md:justify-start">
+            <Link href="/contact" className=" heroBtn ">
               Hire Me Now! <AiOutlineArrowRight />
             </Link>
             <a
               href="https://drive.google.com/file/d/1b6d9R61U4J1LVTq0Op2iI4Muw1yed3HL/view?usp=sharing"
               target="_blank"
-              className="heroBtn"
+              className="heroBtn2"
             >
               Download CV <AiOutlineDownload />
             </a>
           </div>
-          <div className=" flex gap-5 py-6">
+          <div className=" flex gap-5 py-6 justify-center md:justify-start">
             <a
               href="mailto:rajaulkarim2810@gmail.com"
               target="_blank"
-              className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer"
+              className=" bg-white p-2 rounded-full shadow-md border hover:bg-skin-fill hover:text-white border-teal-600 transition duration-500 cursor-pointer"
             >
               <FiMail />
             </a>
             <a
               href="https://www.facebook.com/Hira2810"
               target="_blank"
-              className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer"
+              className=" bg-white p-2 rounded-full shadow-md border hover:bg-skin-fill hover:text-white border-teal-600 transition duration-500 cursor-pointer"
             >
               <BsFacebook />
             </a>
             <a
               href="https://www.linkedin.com/in/rajaul2810/"
               target="_blank"
-              className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer"
+              className=" bg-white p-2 rounded-full shadow-md border hover:bg-skin-fill hover:text-white border-teal-600 transition duration-500 cursor-pointer"
             >
               <BsLinkedin />
             </a>
             <a
               href="https://github.com/Rajaul2810"
               target="_blank"
-              className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer"
+              className=" bg-white p-2 rounded-full shadow-md border hover:bg-skin-fill hover:text-white border-teal-600 transition duration-500 cursor-pointer"
             >
               <BsGithub />
             </a>
             <a
               href="https://twitter.com/Rajaul2810"
               target="_blank"
-              className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer"
+              className=" bg-white p-2 rounded-full shadow-md border hover:bg-skin-fill hover:text-white border-teal-600 transition duration-500 cursor-pointer"
             >
               <BsTwitter />
             </a>
             <a
               href="https://www.youtube.com/channel/UCvK7OuxNq_I3xyNenkj9x8Q"
               target="_blank"
-              className=" bg-white p-2 rounded-full shadow-md hover:bg-amber-300 transition duration-500 cursor-pointer"
+              className=" bg-white p-2 rounded-full shadow-md border border-teal-600 hover:bg-skin-fill hover:text-white  transition duration-500 cursor-pointer"
             >
               <BsYoutube />
             </a>
@@ -103,7 +104,7 @@ const Hero = () => {
           <Image
             src={hero}
             priority={true}
-            className=" w-80 bg-gradient-to-t from-amber-400 to-amber-200 rounded-t-full"
+            className=" w-80 bg-skin-fill rounded-t-full"
             alt="hero"
           />
           <div className=" absolute top-0">
@@ -112,7 +113,7 @@ const Hero = () => {
           <div className=" absolute bottom-10 -left-10">
               <p className=" px-5 py-2 rounded-full shadow-xl bg-white border">Hackathon | 5+</p>
           </div>
-          <div className=" absolute  top-2/4 -right-16 grid place-items-center">
+          <div className=" absolute  top-2/4 -right-10 grid place-items-center">
               <p className=" px-5 py-2 rounded-full shadow-xl bg-white border">Contest | 10+</p>
           </div>
         </div>

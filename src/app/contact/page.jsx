@@ -72,7 +72,7 @@ const Contact = () => {
             <div>
               <div className=" bg-white shadow-sm rounded-md p-5 w-72">
                 <div className=" flex justify-center">
-                  <p className=" btn btn-circle bg-amber-300 hover:bg-amber-400 shadow-xl ">
+                  <p className=" btn btn-circle bg-skin-fill hover:bg-skin-fill text-white shadow-xl ">
                     <FiMail />
                   </p>
                 </div>
@@ -92,7 +92,7 @@ const Contact = () => {
               </div>
               <div className=" bg-white shadow-sm rounded-md p-5 w-72 mt-5">
                 <div className=" flex justify-center">
-                  <p className=" btn btn-circle bg-amber-300 hover:bg-amber-400 shadow-xl ">
+                  <p className=" btn btn-circle bg-skin-fill hover:bg-skin-fill text-white shadow-xl ">
                     <FaWhatsapp />
                   </p>
                 </div>
