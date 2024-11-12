@@ -3,7 +3,7 @@ import web from "../../../public/assets/service/web.png";
 import power from "../../../public/assets/service/power.png";
 import data from "../../../public/assets/service/data.png";
 
-import { FaBootstrap, FaConnectdevelop, FaCss3, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaAccessibleIcon, FaBootstrap, FaConnectdevelop, FaCss3, FaDocker, FaHtml5, FaNodeJs, FaReact } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { SiExpress, SiGit, SiMongodb, SiMysql, SiNextdotjs, SiPython, SiReact, SiRedux } from "react-icons/si";
@@ -122,6 +122,11 @@ const participations = [
 ]
 
 const awards = [
+  {
+    id: 13,
+    name: 'Sydney University Coding Fest 2024, Australia',
+    category: 'Champion'
+  },
   {
     id: 0,
     name: 'University Project Showcase Competition JnU',
@@ -265,6 +270,26 @@ const skills = [
     name: 'Machine Learning',
     icon: <FaConnectdevelop />
   },
+  {
+    id: 16,
+    name: 'Docker',
+    icon: <FaDocker />
+  },
+  {
+    id: 17,
+    name: 'React Tanstack Query',
+    icon: <FaReact />
+  },
+  {
+    id: 18,
+    name: 'React Native Expo',
+    icon: <FaReact />
+  },
+  {
+    id: 19,
+    name: 'Zustand',
+    icon: <FaAccessibleIcon />
+  }
 ]
 const feature = [
   {

@@ -1,191 +1,141 @@
 "use client";
 import React from "react";
 import { skills, awards } from "../libs/Data";
-import { FiAward, FiCalendar, FiCheckCircle } from "react-icons/fi";
+import { FiAward, FiCalendar, FiCheckCircle, FiUsers } from "react-icons/fi";
 
 const Resume = () => {
   return (
-    <section className="">
-      <div className="">
-        <h1 className=" text-center text-3xl font-bold pt-10 drop-shadow-md">
-          My Resume
-        </h1>
-        <p className=" text-center text-gray-400">In Details</p>
-        <div className="  flex justify-center py-10 ">
-          <div className=" w-11/12 md:w-10/12 grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className=" shadow-md bg-white w-full p-5 rounded-md border">
-              <h1 className=" font-bold py-2 text-lg">My Skills</h1>
-              <div className=" grid grid-cols-2 gap-3 p-2 ">
+    <section className="bg-gradient-to-br from-slate-50 to-teal-50 min-h-screen">
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="text-center space-y-2 pt-16">
+          <h1 className="text-4xl font-bold text-gray-800 drop-shadow-md">
+            My Professional Journey
+          </h1>
+          <p className="text-teal-600 font-medium">Experience & Achievements</p>
+        </div>
+
+        <div className="py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            
+            {/* Skills Section */}
+            <div className="bg-white rounded-xl shadow-lg border border-teal-100 p-6 hover:shadow-xl transition-shadow">
+              <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                <span className="text-teal-600">Technical Skills</span>
+              </h2>
+              <div className="grid grid-cols-2 gap-4">
                 {skills.map(({ name, icon, id }) => (
                   <div
                     key={id}
-                    className=" p-2 border rounded-md bg-slate-50"
-                    draggable
+                    className="p-3 rounded-lg bg-gradient-to-br from-slate-50 to-teal-50 border border-teal-100 
+                    hover:shadow-md transition-all cursor-pointer"
                   >
-                    <div className="flex items-center  gap-5 ">
-                      <p className="">{icon}</p>
-                      <p className=" text-sm">{name}</p>
+                    <div className="flex items-center gap-3">
+                      <span className="text-teal-600">{icon}</span>
+                      <p className="text-gray-700">{name}</p>
                     </div>
                   </div>
                 ))}
               </div>
-             
-                <hr className="py-4" />
 
-              <div className=" grid grid-cols-2 gap-3 p-2">
-                <div className=" p-2 border rounded-md bg-slate-50">
-                  <p className=" text-sm">Problem Solving</p>
-                </div>
-                <div className=" p-2 border rounded-md bg-slate-50">
-                  <p className=" text-sm">Leadership Skill</p>
-                </div>
-                <div className=" p-2 border rounded-md bg-slate-50">
-                  <p className=" text-sm">Presentaion Skill</p>
-                </div>
-                <div className=" p-2 border rounded-md bg-slate-50">
-                  <p className=" text-sm">Team Player</p>
-                </div>
+              <div className="my-6 border-t border-teal-100"></div>
+
+              <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                <span className="text-teal-600">Soft Skills</span>
+              </h2>
+              <div className="grid grid-cols-2 gap-4">
+                {["Problem Solving", "Leadership", "Presentation", "Team Collaboration", "Communication", "Time Management", "Adaptability", "Critical Thinking"].map((skill) => (
+                  <div key={skill} className="p-3 rounded-lg bg-gradient-to-br from-slate-50 to-teal-50 border border-teal-100">
+                    <p className="text-gray-700">{skill}</p>
+                  </div>
+                ))}
               </div>
             </div>
 
-            <div className=" shadow-md bg-white w-full p-5 rounded-md border">
-              <h1 className=" font-bold py-2 text-lg">
-                My Participations & Achievement
-              </h1>
-              {awards.map((item, index) => (
-                <div key={index} className=" flex items-center p-2 gap-2">
-                  <p className=" text-green-500 shadow-md rounded-full">
-                    <FiCheckCircle />
-                  </p>
-                  <div>
-                    <p className=" text-sm">{item?.name}</p>
-                    <p className=" text-xs font-bold">{item?.category}</p>
+            {/* Achievements Section */}
+            <div className="bg-white rounded-xl shadow-lg border border-teal-100 p-6 hover:shadow-xl transition-shadow">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">
+                Achievements & Recognition
+              </h2>
+              <div className="space-y-4">
+                {awards.map((item, index) => (
+                  <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-br from-slate-50 to-teal-50">
+                    <span className="text-teal-600 p-2 bg-white rounded-full shadow-sm">
+                      <FiAward />
+                    </span>
+                    <div>
+                      <p className="font-medium text-gray-800">{item?.name}</p>
+                      <p className="text-sm text-teal-600">{item?.category}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Experience Section */}
+            <div className="bg-white rounded-xl shadow-lg border border-teal-100 p-6 hover:shadow-xl transition-shadow">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Professional Experience</h2>
+              <div className="space-y-6">
+                <div className="relative pl-8 border-l-2 border-teal-200">
+                  <div className="absolute -left-2 top-0">
+                    <div className="w-4 h-4 rounded-full bg-teal-600"></div>
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-bold text-gray-800">Mentor&apos;s - React Native Developer</h3>
+                    <p className="text-teal-600">Full-time</p>
+                    <p className="text-sm text-gray-600 flex items-center gap-2">
+                      <FiCalendar /> 09-2024 - Present
+                    </p>
                   </div>
                 </div>
-              ))}
-            </div>
-            <div>
-              <div className=" shadow-md bg-white w-full p-5 rounded-md border">
-                <h1 className=" font-bold py-2 text-lg">Experience</h1>
-                <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
-                  <li>
-                    <div className="timeline-middle">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        className="w-5 h-5 text-green-500"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div className="timeline-end timeline-box w-full rounded-sm">
-                      <p className=" font-bold ">AyAI Corp Limited - Internship</p>
-                      <p className=" text-gray-700">Web Developer</p>
-                      <p className=" flex gap-3 items-center py-2 text-sm">
-                        <FiCalendar color="teal"/>
-                        07-2023 - 11-2023
-                      </p>
-                    </div>
-                    <hr />
-                  </li>
-                  <li>
-                    <hr />
-                    <div className="timeline-middle">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        className="w-5 h-5 text-green-500"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div className="timeline-end timeline-box w-full rounded-sm">
-                      <p className=" font-bold">
-                        CPSD Technologies Ltd - Internship
-                      </p>
-                      <p className=" text-gray-700">IOT Engineer</p>
-                      <p className=" flex gap-3 items-center py-2 text-sm">
-                        <FiCalendar color="teal"/>
-                        10-2023 - 01-2024
-                      </p>
-                    </div>
-                    <hr />
-                  </li>
-                </ul>
+
+                <div className="relative pl-8 border-l-2 border-teal-200">
+                  <div className="absolute -left-2 top-0">
+                    <div className="w-4 h-4 rounded-full bg-teal-600"></div>
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-bold text-gray-800">AyAI Corp Limited</h3>
+                    <p className="text-teal-600">Web Developer Intern</p>
+                    <p className="text-sm text-gray-600 flex items-center gap-2">
+                      <FiCalendar /> 07-2023 - 11-2023
+                    </p>
+                  </div>
+                </div>
+
+                <div className="relative pl-8 border-l-2 border-teal-200">
+                  <div className="absolute -left-2 top-0">
+                    <div className="w-4 h-4 rounded-full bg-teal-600"></div>
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-bold text-gray-800">CPSD Technologies Ltd</h3>
+                    <p className="text-teal-600">IOT Engineer Intern</p>
+                    <p className="text-sm text-gray-600 flex items-center gap-2">
+                      <FiCalendar /> 10-2023 - 01-2024
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div>
-              <div className=" shadow-md bg-white w-full p-5 rounded-md border">
-                <h1 className=" font-bold py-2 text-lg">Other Activities</h1>
-                <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
-                  <li>
-                    <div className="timeline-middle">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        className="w-5 h-5 text-green-500"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div className="timeline-end timeline-box w-full rounded-sm">
-                      <p className=" font-bold">
-                      UNICEF Bangladesh
-                      </p>
-                      <p className=" text-gray-700">Volunteer</p>
-                      <p className=" flex gap-3 items-center py-2 text-sm">
-                        <FiCalendar color="teal"/>
-                        2022 - Present
-                      </p>
-                    </div>
-                    <hr />
-                  </li>
-                  <li>
-                    <hr />
-                    <div className="timeline-middle">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        className="w-5 h-5 text-green-500"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div className="timeline-end timeline-box w-full rounded-sm">
-                      <p className=" font-bold">
-                      Orphan Paradise Organization
-                      </p>
-                      <p className=" text-gray-700">Volunteer</p>
-                      <p className=" flex gap-3 items-center py-2 text-sm">
-                        <FiCalendar color="teal"/>
-                        2022 - Present
-                      </p>
-                    </div>
-                    <hr />
-                  </li>
-                </ul>
+
+            {/* Club & Activities Section */}
+            <div className="bg-white rounded-xl shadow-lg border border-teal-100 p-6 hover:shadow-xl transition-shadow">
+              <h2 className="text-xl font-bold text-gray-800 mb-4">Volunteer Activities</h2>
+              
+              <div className="space-y-6">
+
+                <div className="p-4 rounded-lg bg-gradient-to-br from-slate-50 to-teal-50">
+                  <h3 className="font-bold text-gray-800">UNICEF Bangladesh</h3>
+                  <p className="text-teal-600">Volunteer</p>
+                  <p className="text-sm text-gray-600">2022 - Present</p>
+                </div>
+
+                <div className="p-4 rounded-lg bg-gradient-to-br from-slate-50 to-teal-50">
+                  <h3 className="font-bold text-gray-800">Orphan Paradise Organization</h3>
+                  <p className="text-teal-600">Volunteer</p>
+                  <p className="text-sm text-gray-600">2022 - Present</p>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
